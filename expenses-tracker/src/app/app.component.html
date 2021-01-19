@@ -1,0 +1,44 @@
+<header class="h-100">
+    <mdb-navbar SideClass="navbar fixed-top stylish-color-dark navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" class="navCss" [containerInside]="false">
+      <mdb-navbar-brand>
+        <a class="logo navbar-brand" href="#">
+          <img id="myLogo" src="../../assets/logo.png" alt="">
+          <span style="margin-left: 5%; font-size: xx-large;">Expenses Tracker</span>
+        </a>
+      </mdb-navbar-brand>
+      <links>
+        <ul class="navbar-nav" style="margin-left: 75%;" >
+          <li class="nav-item active waves-light" mdbWavesEffect>
+            <a class="nav-link">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+            <a class="nav-link" (click)="open()" >Sign Up</a>
+          </li>
+          <li class="nav-item waves-light" mdbWavesEffect>
+            <a class="nav-link" routerLink="/sign-in">Sign In</a>
+          </li>
+        </ul>
+      </links>
+    </mdb-navbar>
+  </header>
+  <!--Main Navigation-->
+   <!-- /.Main -->
+    <div class="view intro-2">
+        <div class="full-bg-img">
+            <div class="mask rgba-black-light flex-center">
+            <div class="second">
+              <div class="container text-left white-text wow fadeInUp">
+                <h1>EXPENSE Tracker</h1>
+                <h2>A well traced expenses makes your budget more apropriate!</h2>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  <app-about></app-about>
+  <app-footer></app-footer>
+  <router-outlet></router-outlet>
+
